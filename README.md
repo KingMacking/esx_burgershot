@@ -18,6 +18,32 @@ This is my first release, so be nice :(
 ```
 start esx_burgershot
 ```
+## Extras
+- I use this map: https://es.gta5-mods.com/maps/gtaiv-burgershot-interior-sp-and-fivem (All credits to the mapper "Smallo"
+- If u use "esx_doorlock", in the config.lua you can add this: 
+```
+	{
+		objName = 'cj_int_door_24',
+		objCoords  = {x = -1195.61, y = -897.0, z = 14.0},
+		textCoords = {x = -1195.91, y = -897.6, z = 15.0},
+		authorizedJobs = { 'burgershot' },
+		locked = true,
+		distance = 5
+	},
+
+	{
+		objName = 'cj_int_door_24',
+		objCoords  = {x = -1200.27, y = -892.68, z = 14.0},
+		textCoords = {x = -1200.27, y = -892.68, z = 15.0},
+		authorizedJobs = { 'burgershot' },
+		locked = true,
+		distance = 5
+	},
+```
+This will make that only burgershot employees can open doors.
+
+- I use this car to get and trasport ingredients: https://mega.nz/#!L4cAUQhB!xmsoqkNDF4fGSciqsaOwxh-JDQtv5zY4zvDujbYxqTw
+
 
 # Legal
 ### License

@@ -7,7 +7,7 @@ This is my first release, so be nice :(
 ## Download & Installation
 
 ### Manually
-- Download https://github.com/SamuelGamerPT/esx_cooking/archive/master.zip
+- Download https://github.com/KingMacking/esx_burgershot/archive/master.zip
 - Put it in the `[esx]` directory
 
 

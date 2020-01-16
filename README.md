@@ -20,7 +20,7 @@ start esx_burgershot
 ```
 ## Extras
 - I use this map: https://es.gta5-mods.com/maps/gtaiv-burgershot-interior-sp-and-fivem (All credits to the mapper "Smallo"
-- If u use "esx_doorlock", in the config.lua you can add this: 
+- If you use "esx_doorlock", in the config.lua you can add this: 
 ```
 	{
 		objName = 'cj_int_door_24',

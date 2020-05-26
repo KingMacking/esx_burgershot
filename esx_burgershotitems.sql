@@ -14,6 +14,6 @@ INSERT INTO `items` (`name`, `label`, `weight`) VALUES
 	('vbread', 'Gluten-free bread', 1),
 	('nuggets4', 'Nuggets x4', 1),
 	('nuggets10', 'Nuggets x10', 1),
-	('shamburger', 'Plain bun-burger', 1),
-	('vhamburger', 'Quarter pounder w/cheese', 1)
+	('shamburger', 'Quater pounder w/cheese', 1),
+	('vhamburger', 'Veggie Burger', 1)
 ;

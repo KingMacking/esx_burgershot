@@ -46,7 +46,7 @@ end
 function IsGradeBoss()
     if PlayerData ~= nil then
         local IsGradeBoss = false
-        if PlayerData.job.grade_name == 'boss' or PlayerData.job.grade_name == 'viceboss' then
+        if PlayerData.job.grade_name == 'boss'  then
             IsGradeBoss = true
         end
         return IsGradeBoss
@@ -124,8 +124,8 @@ function OpenCloakroomMenu()
   local playerPed = GetPlayerPed(-1)
 
   local elements = {
-    { label = "Ropa de civil",     value = 'citizen_wear'},
-    { label = "Ropa de trabajo",    value = 'barman_outfit'}
+    { label = "Civillian Clothes",     value = 'citizen_wear'},
+    { label = "Work Uniform",    value = 'barman_outfit'}
   }
 
   ESX.UI.Menu.CloseAll()
@@ -169,17 +169,17 @@ end
 function OpenVaultMenu()
 
     local elements = {
-      {label = "Lechuga (x1) - 8$", value = 'lettuce'},
-      {label = "Tomate (x1) - 8$", value = 'tomato'},
-      {label = "Queso (x1) - 20$", value = 'cheese'},
-      {label = "Papa (x1) - 2$", value = 'potato'},
-      {label = "Hamburguesa congelada (x1) - 5$", value = 'fburger'},
-      {label = "Hamburguesa veggie congelada (x1) - 4$", value = 'fvburger'},
-      {label = "Pan (x1) - 3$", value = 'bread'},
-      {label = "Nugget (x1) - 1.5$", value = 'nugget'},
+      {label = "Lettuce (x1) - 8$", value = 'lettuce'},
+      {label = "Tomato (x1) - 8$", value = 'tomato'},
+      {label = "Cheese (x1) - 20$", value = 'cheese'},
+      {label = "Potato (x1) - 2$", value = 'potato'},
+      {label = "Frozen beef patty (x1) - 5$", value = 'fburger'},
+      {label = "Frozen veggie burger (x1) - 4$", value = 'fvburger'},
+      {label = "Bread (x1) - 3$", value = 'bread'},
+      {label = "Chicken Nugget (x1) - 1.5$", value = 'nugget'},
       {label = "CocaCola (x1) - 3$", value = 'cocacola'},
-      {label = "Agua (x1) - 2$", value = 'water'},
-      {label = "Pan veggie (x1)- 3$", value = 'vbread'}
+      {label = "Water (x1) - 2$", value = 'water'},
+      {label = "Gluten-free bread (x1)- 3$", value = 'vbread'}
     }
     
 
@@ -247,7 +247,7 @@ function OpenVaultMenu()
         menu.close()
 
         CurrentAction     = 'menu_vault'
-        CurrentActionMsg  = "~g~E~w~ para comprar ingredientes"
+        CurrentActionMsg  = "Press ~INPUT_CONTEXT~ to buy ingredients"
         CurrentActionData = {}
       end
     )
@@ -267,7 +267,7 @@ function OpenFridgeMenu()
     ESX.UI.Menu.Open(
       'default', GetCurrentResourceName(), 'fridge',
       {
-        title    = "Frigorifico",
+        title    = "Fridge",
         align    = 'top-left',
         elements = elements,
       },
@@ -288,7 +288,7 @@ function OpenFridgeMenu()
         menu.close()
 
         CurrentAction     = 'menu_fridge'
-        CurrentActionMsg  = "~g~E~w~ Para abrir el frigorifico"
+        CurrentActionMsg  = "Press ~INPUT_CONTEXT~ to open the fridge"
         CurrentActionData = {}
       end
     )
@@ -298,15 +298,15 @@ end
 function OpenCozinharMenu()
 
 	local elements = {
-      {label = "Cortar tomate", value = 'ctomato'},
-      {label = "Cortar lechuga", value = 'clettuce'},
-      {label = "Cortar queso", value = 'ccheese'},
-      {label = "Hamburguesa simple", value = 'shamburger'},
-      {label = "Hamburguesa completa", value = 'hamburger'},
-      {label = "Hamburguesa veggie", value = 'vhamburger'},
-      {label = "Nuggets x4", value = 'nuggets4'},
-      {label = "Nuggets x10", value = 'nuggets10'},
-      {label = "Papas fritas", value = 'chips'}
+      {label = "Chopped tomato", value = 'ctomato'},
+      {label = "Chopped lettuce", value = 'clettuce'},
+      {label = "Cheese slice", value = 'ccheese'},
+      {label = "Plain bun-burger", value = 'shamburger'},
+      {label = "Quarter pounder w/cheese", value = 'hamburger'},
+      {label = "Veggie Burger", value = 'vhamburger'},
+      {label = "Chicken Nuggets x4", value = 'nuggets4'},
+      {label = "Chicken Nuggets x10", value = 'nuggets10'},
+      {label = "Fries", value = 'chips'}
     }
     
 
@@ -315,7 +315,7 @@ function OpenCozinharMenu()
     ESX.UI.Menu.Open(
       'default', GetCurrentResourceName(), 'cook',
       {
-        title    = "Cocina",
+        title    = "Cook Food",
         align    = 'top-left',
         elements = elements,
       },
@@ -330,7 +330,7 @@ function OpenCozinharMenu()
         menu.close()
 
         CurrentAction     = 'menu_cook'
-        CurrentActionMsg  = "~g~E~w~ Para cocinar algo"
+        CurrentActionMsg  = "Press ~INPUT_CONTEXT~ to cook"
         CurrentActionData = {}
       end
     )
@@ -482,7 +482,7 @@ function OpenSocietyActionsMenu()
   ESX.UI.Menu.Open(
     'default', GetCurrentResourceName(), 'burgershot_actions',
     {
-      title    = "Factura",
+      title    = "Billing",
       align    = 'top-left',
       elements = elements
     },
@@ -926,7 +926,7 @@ AddEventHandler('esx_burgershotjob:hasEnteredMarker', function(zone)
 
       if zone == 'Vaults' then
         CurrentAction     = 'menu_vault'
-        CurrentActionMsg  = "~g~E~w~ para comprar ingredientes"
+        CurrentActionMsg  = "Press ~INPUT_CONTEXT~ to purchase ingredients"
         CurrentActionData = {}
       end
 
@@ -938,7 +938,7 @@ AddEventHandler('esx_burgershotjob:hasEnteredMarker', function(zone)
 	
 	if zone == 'Cook' then
       CurrentAction     = 'menu_cook'
-      CurrentActionMsg  = "~g~E~w~ para cocinar algo"
+      CurrentActionMsg  = "Press ~INPUT_CONTEXT~ to cook"
       CurrentActionData = {}
     end
 

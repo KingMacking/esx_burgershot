@@ -1,5 +1,5 @@
 # Important
-If you are not using the burgershot MLO that I've linked below you will need to change the blip locations in the config.lua file or you'll find this script to be pretty useless.
+If you are not using the burgershot MLO that I've linked below you will need to change the menu locations in the config.lua file or you'll find this script to be pretty useless.
 
 # esx_burgershot
 This is a fork of the @KingMacking esx_burgershop. I've translated the script from Spanish to English. I'll later add better functionality to the locale to allow easier and full translations into whatever language you wish. I plan to actively work on making this script better and will make additional features for it as time goes on - One of these being the use of mythic notify & progress bar 

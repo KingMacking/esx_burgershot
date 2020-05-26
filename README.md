@@ -1,48 +1,30 @@
+# Important
+If you are not using the burgershot MLO that I've linked below you will need to change the menu locations in the config.lua file or you'll find this script to be pretty useless.
+
 # esx_burgershot
-This is my first release, so be nice :(
+This is a fork of the @KingMacking esx_burgershop. I've translated the script from Spanish to English. I'll later add better functionality to the locale to allow easier and full translations into whatever language you wish. I plan to actively work on making this script better and will make additional features for it as time goes on - One of these being the use of mythic notify & progress bar 
 
 ## Requirements
 - [esx_basicneeds](https://github.com/ESX-Org/esx_basicneeds)
+- [esx_jobs](https://github.com/ESX-Org/esx_jobs)
 
 ## Download & Installation
 
 ### Manually
-- Download https://github.com/KingMacking/esx_burgershot/archive/master.zip
+- Download https://github.com/Mascotte45IE/esx_burgershot/archive/master.zip
 - Put it in the `[esx]` directory
 
 
 ## Installation
-- Import `esx_burgershot.sql` and`esx_burgershotitems.sql` in your database
-- Add this in your server.cfg :
+- Import `esx_burgershot.sql` and`esx_burgershotitems.sql` into your database
+- Add this line to your server.cfg somewhere after [esx_basicneeds] &[esx_jobs] :
 
 ```
 start esx_burgershot
 ```
 ## Extras
-- I use this map: https://es.gta5-mods.com/maps/gtaiv-burgershot-interior-sp-and-fivem (All credits to the mapper "Smallo"
-- If you use "esx_doorlock", in the config.lua you can add this: 
-```
-	{
-		objName = 'cj_int_door_24',
-		objCoords  = {x = -1195.61, y = -897.0, z = 14.0},
-		textCoords = {x = -1195.91, y = -897.6, z = 15.0},
-		authorizedJobs = { 'burgershot' },
-		locked = true,
-		distance = 5
-	},
+- Burgershot MLO https://gta5-mods.com/maps/gtaiv-burgershot-interior-sp-and-fivem (All credits to the mapper "Smallo")
 
-	{
-		objName = 'cj_int_door_24',
-		objCoords  = {x = -1200.27, y = -892.68, z = 14.0},
-		textCoords = {x = -1200.27, y = -892.68, z = 15.0},
-		authorizedJobs = { 'burgershot' },
-		locked = true,
-		distance = 5
-	},
-```
-This will make that only burgershot employees can open doors.
-
-- I use this car to get and trasport ingredients: https://mega.nz/#!L4cAUQhB!xmsoqkNDF4fGSciqsaOwxh-JDQtv5zY4zvDujbYxqTw
 
 
 # Legal

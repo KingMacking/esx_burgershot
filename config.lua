@@ -7,7 +7,7 @@ Config.EnableVaultManagement      = true
 Config.EnableHelicopters          = false
 Config.EnableMoneyWash            = false
 Config.MaxInService               = -1
-Config.Locale                     = 'es'
+Config.Locale                     = 'en'
 
 Config.MissCraft                  = 0 -- %
 
@@ -31,35 +31,35 @@ Config.Blips = {
 Config.Zones = {
 
     Cloakrooms = {
-        Pos   = { x = -1200.09, y = -890.11, z = 13.50 },
+        Pos   = { x = -1200.09, y = -890.11, z = 13.00 },
         Size  = { x = 1.5, y = 1.5, z = 1.0 },
         Color = { r = 255, g = 0, b = 0 },
         Type  = 27,
     },
 
     Vaults = {
-        Pos   = { x = -65.7, y = 6240.03, z = 30.59 },
+        Pos   = { x = -65.7, y = 6240.03, z = 30.09 },
         Size  = { x = 1.3, y = 1.3, z = 1.0 },
         Color = { r = 30, g = 144, b = 255 },
         Type  = 27,
     },
 
     Fridge = {
-        Pos   = { x = -1195.65, y = -900.83, z = 13.50 },
+        Pos   = { x = -1195.65, y = -900.83, z = 13.0 },
         Size  = { x = 1.6, y = 1.6, z = 1.0 },
         Color = { r = 255, g = 0, b = 0 },
         Type  = 27,
     },
 	
 	Cook = {
-        Pos   = { x = -1198.55, y = -901.77, z = 13.50 },
+        Pos   = { x = -1198.55, y = -901.77, z = 13.0 },
         Size  = { x = 1.6, y = 1.6, z = 1.0 },
         Color = { r = 0, g = 200, b = 220 },
         Type  = 27,
     },
 	
 	Vehicles = {
-        Pos          = { x = -1172.37, y = -899.39, z = 13.29 },
+        Pos          = { x = -1172.37, y = -899.39, z = 12.9 },
         SpawnPoint   = { x = -1170.55, y = -892.59, z = 13.94 },
         Size         = { x = 1.8, y = 1.8, z = 1.0 },
         Color        = { r = 255, g = 255, b = 0 },
@@ -68,14 +68,14 @@ Config.Zones = {
     },
 
     VehicleDeleters = {
-        Pos   = { x = -1164.48, y = -891.76, z = 13.6 },
+        Pos   = { x = -1164.48, y = -891.76, z = 13.15 },
         Size  = { x = 3.0, y = 3.0, z = 0.2 },
         Color = { r = 255, g = 255, b = 0 },
         Type  = 27,
     },
     
     BossActions = {
-        Pos   = { x = -1202.46, y = -895.0, z = 13.5 },
+        Pos   = { x = -1202.46, y = -895.0, z = 13.0 },
         Size  = { x = 1.5, y = 1.5, z = 1.0 },
         Color = { r = 0, g = 100, b = 0 },
         Type  = 1,

@@ -176,17 +176,17 @@ AddEventHandler('esx_burgershotjob:craftingCoktails', function(Value)
             local gammaQuantity      = xPlayer.getInventoryItem('bread').count
 
             if alephQuantity < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~deta de queso~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You do not have any chopped tomatoes")
             elseif bethQuantity < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~hamburguesa congelada~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You do not have any frozen beef patties")
             elseif gammaQuantity < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~pan~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You do not have any bread")
             else
-              TriggerClientEvent('esx:showNotification', _source, "Preparando ~b~hamburguesa simple~w~")
+              TriggerClientEvent('esx:showNotification', _source, "Cooking a plain bun-burger")
               TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
                     Citizen.Wait(20000)
                     TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
-                    TriggerClientEvent('esx:showNotification', _source, "Hamburguesa simple esta ~g~lista~w~")
+                    TriggerClientEvent('esx:showNotification', _source, "You made a plain burger!")
                     xPlayer.removeInventoryItem('ccheese', 1)
                     xPlayer.removeInventoryItem('fburger', 1)
                     xPlayer.removeInventoryItem('bread', 1)
@@ -202,21 +202,21 @@ AddEventHandler('esx_burgershotjob:craftingCoktails', function(Value)
             local gammaQuantity2      = xPlayer.getInventoryItem('bread').count
 
             if alephQuantity < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~feta de queso~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You do not have any cheese")
             elseif bethQuantity < 2 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~rodaja de tomate~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You do not have any tomatoes")
             elseif bethQuantity2 < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~hoja de lechuga~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You do not have any lettuce")
             elseif gammaQuantity < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~hamburguesa congelada~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You do not have any frozen burgers")
             elseif gammaQuantity2 < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~pan~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You do not have any bread")
             else
-              TriggerClientEvent('esx:showNotification', _source, "Preparando ~b~hamburguesa completa~w~")
+              TriggerClientEvent('esx:showNotification', _source, "Cooking the burger")
               TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
                     Citizen.Wait(25000)
               TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)   
-                    TriggerClientEvent('esx:showNotification', _source, "Hamburguesa completa ~g~lista~w~")
+                    TriggerClientEvent('esx:showNotification', _source, "You made a hamburger")
                     xPlayer.removeInventoryItem('ccheese', 1)
 					          xPlayer.removeInventoryItem('ctomato', 2)
                     xPlayer.removeInventoryItem('clettuce', 1)
@@ -233,19 +233,19 @@ AddEventHandler('esx_burgershotjob:craftingCoktails', function(Value)
             local bethQuantity3      = xPlayer.getInventoryItem('vbread').count
 
             if alephQuantity < 2 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~rodaja de tomate~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You need more tomatoes")
             elseif bethQuantity < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~hoja de lechuga~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You need more lettuce")
             elseif bethQuantity2 < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~hamburguesa veggie congelada~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You need more frozen veggie burgers")
             elseif bethQuantity2 < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~pan veggie~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You do not have any gluten-free bread")
             else
-              TriggerClientEvent('esx:showNotification', _source, "Preparando ~b~hamburguesa veggie~w~")
+              TriggerClientEvent('esx:showNotification', _source, "Cooking a veggie burger")
               TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
                     Citizen.Wait(25000)
                     TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
-                    TriggerClientEvent('esx:showNotification', _source, "Hamburguesa veggie esta ~g~lista~w~")
+                    TriggerClientEvent('esx:showNotification', _source, "You made a veggie burger~")
                     xPlayer.removeInventoryItem('ctomato', 2)
 					          xPlayer.removeInventoryItem('clettuce', 1)
                     xPlayer.removeInventoryItem('fvburger', 1)
@@ -258,13 +258,13 @@ AddEventHandler('esx_burgershotjob:craftingCoktails', function(Value)
             local alephQuantity     = xPlayer.getInventoryItem('nugget').count
 
             if alephQuantity < 4 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~nugget~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You need more chicken nuggets")
             else
-              TriggerClientEvent('esx:showNotification', _source, "Cocinando ~b~nuggets~w~")
+              TriggerClientEvent('esx:showNotification', _source, "Cooking chicken nuggets")
               TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
                     Citizen.Wait(20000)
                     TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
-                    TriggerClientEvent('esx:showNotification', _source, "Nuggets x4 esta ~g~listo~w~")
+                    TriggerClientEvent('esx:showNotification', _source, "You cooked four chicken nuggets")
                     xPlayer.removeInventoryItem('nugget', 4)
                     xPlayer.addInventoryItem('nuggets4', 1)
             end
@@ -274,13 +274,13 @@ AddEventHandler('esx_burgershotjob:craftingCoktails', function(Value)
             local alephQuantity     = xPlayer.getInventoryItem('nugget').count
 
             if alephQuantity < 10 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~nugget~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You need more chicken nuggets")
             else
-              TriggerClientEvent('esx:showNotification', _source, "Cocinando ~b~nuggets~w~")
+              TriggerClientEvent('esx:showNotification', _source, "Cooking chicken nuggets")
               TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
                     Citizen.Wait(20000)
                     TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
-                    TriggerClientEvent('esx:showNotification', _source, "Nuggets x10 esta ~g~listo~w~")
+                    TriggerClientEvent('esx:showNotification', _source, "You made ten chicken nuggets")
                     xPlayer.removeInventoryItem('nugget', 10)
                     xPlayer.addInventoryItem('nuggets10', 1)
             end
@@ -290,13 +290,13 @@ AddEventHandler('esx_burgershotjob:craftingCoktails', function(Value)
             local alephQuantity     = xPlayer.getInventoryItem('potato').count
 
             if alephQuantity < 2 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~papa~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You need more potatoes")
             else
-              TriggerClientEvent('esx:showNotification', _source, "Cocinando ~b~papas fritas~w~")
+              TriggerClientEvent('esx:showNotification', _source, "Cooking fries")
               TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
                     Citizen.Wait(20000)
                     TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
-                    TriggerClientEvent('esx:showNotification', _source, "Papas fritas estan ~g~listas~w~")
+                    TriggerClientEvent('esx:showNotification', _source, "You made large fries")
                     xPlayer.removeInventoryItem('potato', 2)
                     xPlayer.addInventoryItem('chips', 1)
             end
@@ -306,13 +306,13 @@ AddEventHandler('esx_burgershotjob:craftingCoktails', function(Value)
             local alephQuantity     = xPlayer.getInventoryItem('tomato').count
 
             if alephQuantity < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~tomate~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You need more tomatoes")
             else
-              TriggerClientEvent('esx:showNotification', _source, "Cortando ~b~tomate~w~")
+              TriggerClientEvent('esx:showNotification', _source, "Chopping tomatoes")
               TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
                     Citizen.Wait(15000)
                     TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
-                    TriggerClientEvent('esx:showNotification', _source, "Rodajas de tomate estan ~g~listas~w~")
+                    TriggerClientEvent('esx:showNotification', _source, "You chopped up a tomato")
                     xPlayer.removeInventoryItem('tomato', 1)
                     xPlayer.addInventoryItem('ctomato', 4)
             end
@@ -322,13 +322,13 @@ AddEventHandler('esx_burgershotjob:craftingCoktails', function(Value)
             local alephQuantity     = xPlayer.getInventoryItem('lettuce').count
 
             if alephQuantity < 2 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~lechuga~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You need more lettuce")
             else
-              TriggerClientEvent('esx:showNotification', _source, "Cortando ~b~lechuga~w~")
+              TriggerClientEvent('esx:showNotification', _source, "Chopping lettuce~")
               TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
                     Citizen.Wait(15000)
                     TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
-                    TriggerClientEvent('esx:showNotification', _source, "Hojas de lechuga estan ~g~listas~w~")
+                    TriggerClientEvent('esx:showNotification', _source, "You chopped up the lettuce")
                     xPlayer.removeInventoryItem('lettuce', 1)
                     xPlayer.addInventoryItem('clettuce', 4)
             end
@@ -338,13 +338,13 @@ AddEventHandler('esx_burgershotjob:craftingCoktails', function(Value)
             local alephQuantity     = xPlayer.getInventoryItem('cheese').count
 
             if alephQuantity < 1 then
-                TriggerClientEvent('esx:showNotification', _source, "Falta ~r~queso~w~")
+                TriggerClientEvent('esx:showNotification', _source, "You need more cheese")
             else
-                TriggerClientEvent('esx:showNotification', _source, "Cortando ~b~queso~w~")
+                TriggerClientEvent('esx:showNotification', _source, "Chopping cheese into slices")
                 TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
                     Citizen.Wait(15000)
                     TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
-                    TriggerClientEvent('esx:showNotification', _source, "Fetas de queso estan ~g~listas~w~")
+                    TriggerClientEvent('esx:showNotification', _source, "You chopped up the cheese into five slices")
                     xPlayer.removeInventoryItem('cheese', 1)
                     xPlayer.addInventoryItem('ccheese', 5)
             end

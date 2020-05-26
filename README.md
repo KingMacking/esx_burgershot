@@ -11,7 +11,7 @@ This is a fork of the @KingMacking esx_burgershop. I've translated the script fr
 ## Download & Installation
 
 ### Manually
-- Download https://github.com/KingMacking/esx_burgershot/archive/master.zip
+- Download https://github.com/Mascotte45IE/esx_burgershot/archive/master.zip
 - Put it in the `[esx]` directory
 
 

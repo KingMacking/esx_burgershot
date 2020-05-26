@@ -301,7 +301,7 @@ function OpenCozinharMenu()
       {label = "Chopped tomato", value = 'ctomato'},
       {label = "Chopped lettuce", value = 'clettuce'},
       {label = "Cheese slice", value = 'ccheese'},
-      {label = "Plain bun-burger", value = 'shamburger'},
+      {label = "Plain bun burger", value = 'shamburger'},
       {label = "Quarter pounder w/cheese", value = 'hamburger'},
       {label = "Veggie Burger", value = 'vhamburger'},
       {label = "Chicken Nuggets x4", value = 'nuggets4'},

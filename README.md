@@ -6,7 +6,7 @@ This is a fork of the @KingMacking esx_burgershop. I've translated the script fr
 
 ## Requirements
 - [esx_basicneeds](https://github.com/ESX-Org/esx_basicneeds)
-- [esx_jobs] (https://github.com/ESX-Org/esx_jobs)
+- [esx_jobs](https://github.com/ESX-Org/esx_jobs)
 
 ## Download & Installation
 
